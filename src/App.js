@@ -13,7 +13,6 @@ function App() {
   return (
     <>
       <CustomItemContext>
-      <BrowserRouter>
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
@@ -23,7 +22,7 @@ function App() {
           <Route path="/myorder" element={<Myorder/>} />
         </Routes>
         {/* <Footer /> */}
-      </BrowserRouter>
+      {/* </BrowserRouter> */}
       </CustomItemContext>
     </>
   );

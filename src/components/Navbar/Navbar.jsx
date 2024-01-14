@@ -8,9 +8,6 @@ import { useValue } from '../../Context';
 export default function Navbar() {
     const { signIn,  handleSignin} = useValue();
     
-
-    
-
     return (
         <>
             <div className="nav">
