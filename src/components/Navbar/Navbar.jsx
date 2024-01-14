@@ -17,7 +17,7 @@ export default function Navbar() {
                 <h1>BuyBusy</h1>
                 <div className="right">
                     <img src="https://cdn-icons-png.flaticon.com/128/5856/5856840.png" alt="home" className='icon-style' />
-                    <NavLink to="/Buy_Busy/" style={({ isActive }) => isActive ? { color: "blue" } : { color: "black" }}>
+                    <NavLink to="/" style={({ isActive }) => isActive ? { color: "blue" } : { color: "black" }}>
                         <span>Home</span>
                     </NavLink>
 
