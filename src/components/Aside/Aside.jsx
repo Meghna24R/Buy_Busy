@@ -3,7 +3,7 @@ import "./Aside.scss";
 import { useValue } from '../../Context';
 
 export default function Aside({ applyFilters }) {
-  const {  amt, setAmt} = useValue();
+  const { amt, setAmt} = useValue();
   const [selectedFilters, setSelectedFilters] = useState([]);
 
   const handlePriceChange = (event) => {
@@ -38,7 +38,7 @@ export default function Aside({ applyFilters }) {
             type="range"
             className="filter"
             name="price"
-            min={1}
+            min={0}
             max={100000}
             step={100}
             value={amt}

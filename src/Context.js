@@ -13,9 +13,9 @@ function CustomItemContext({ children }) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [cartItems, setCartItems] = useState([]);
-  const [totalAmt, setTotalAmt] = useState(0);
+  const [totalAmt, setTotalAmt] = useState();
   const [quantity, setQuantity] = useState(1);
-  const [amt, setAmt] = useState(8000);
+  const [amt, setAmt] = useState(100000);
   const [isMyorder, setIsMyOrder] = useState(false);
   const [myorder, setMyOrder] = useState([]);
   const [name, setName] = useState('');

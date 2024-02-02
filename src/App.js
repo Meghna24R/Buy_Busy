@@ -13,16 +13,17 @@ function App() {
   return (
     <>
       <CustomItemContext>
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/signin" element={<Signin />} />
-          <Route path="/signup" element={<Signup />} />
-          <Route path="/cart" element={<Cart />} />
-          <Route path="/myorder" element={<Myorder/>} />
-        </Routes>
+        {/* <BrowserRouter> */}
+          <Navbar />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/signin" element={<Signin />} />
+            <Route path="/signup" element={<Signup />} />
+            <Route path="/cart" element={<Cart />} />
+            <Route path="/myorder" element={<Myorder/>} />
+          </Routes>
         {/* <Footer /> */}
-      {/* </BrowserRouter> */}
+        {/* </BrowserRouter> */}
       </CustomItemContext>
     </>
   );

@@ -63,12 +63,11 @@ export default function Product() {
         ) : (
           products
             .filter(
-              (item) =>
+              (item) => 
                 item.name.toLowerCase().includes(searchQuery.toLowerCase()) &&
-                item.price <= amt &&
+                Number(item.price) <= Number(amt) &&
                 (selectedFilters.length === 0 ||
-                  selectedFilters.includes(item.category))
-            )
+                  selectedFilters.includes(item.category)))
             .map((item) => <ProductItem item={item} key={item.id} />)
         )}
       </div>
