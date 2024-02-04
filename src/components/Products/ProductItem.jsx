@@ -23,11 +23,11 @@ export default function ProductItem({ item }) {
           
         );
         setCartItems(updatedCartItems);
-        setTotalAmt(totalAmt + item.price);
+        setTotalAmt(totalAmt + Number(item.price));
       } else {
         // Item doesn't exist in the cart, add it with a quantity of 1
         setCartItems([...cartItems, { ...item, quantity: 1 }]);
-        setTotalAmt(totalAmt + item.price);
+        setTotalAmt(totalAmt + Number(item.price));
       }
 
       // Send the data to Firebase Firestore
